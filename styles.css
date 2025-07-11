@@ -1,0 +1,253 @@
+/* General Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f9f9ff;
+  color: #1e1e2f;
+  line-height: 1.6;
+}
+
+/* Header Section: navbar + hero together */
+.header {
+  background-image: url("Assets/Hero-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #1e1e2f; /* dark text over light bg */
+
+  /* optional: add padding if needed */
+}
+
+/* Navbar inside header */
+.header .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+}
+
+/* Remove white background so bg shows through */
+.navbar {
+  background: transparent;
+  box-shadow: none;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #4f46e5;
+}
+
+/* Buttons + Animation */
+.btn {
+  background-color: #4f46e5;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.btn:hover {
+  background-color: #4338ca;
+  transform: scale(1.05);
+}
+
+.banner {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.banner h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.action-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 10px;
+}
+
+.content-left {
+  flex-basis: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.content-left h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1a202c;
+  margin: 0 0 16px 0;
+}
+
+.content-left p {
+  font-size: 1.125rem;
+  color: #718096;
+  line-height: 1.6;
+  margin: 0 0 24px 0;
+}
+
+.preview-button {
+  background-color: #4f46e5;
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 8px;
+  padding: 14px 28px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.preview-button:hover {
+  background-color: #4338ca;
+}
+
+.image-right {
+  flex-basis: 55%;
+  max-width: 300px;
+}
+
+.image-right img {
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.productive {
+  background-color: #e0e7ff;
+  text-align: center;
+  padding: 20px;
+}
+
+.stats {
+  display: flex;
+  justify-content: center;
+
+  flex-wrap: wrap;
+
+  margin-top: 20px;
+}
+
+.stat {
+  margin: 10px 20px;
+}
+
+.stat span {
+  font-size: 40px;
+
+  font-weight: bold;
+
+  color: #4f46e5;
+}
+
+.feedback {
+  text-align: center;
+  padding: 20px;
+}
+
+.feedback-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.feedback-item {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 10px;
+  width: 200px;
+}
+
+.cta {
+  text-align: center;
+  padding: 60px 20px;
+  background: #f9f9ff;
+}
+
+.cta h2 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.cta p {
+  margin-bottom: 20px;
+}
+
+.cta-image img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 60px 20px;
+  background: #f9f9ff;
+}
+
+.contact-left {
+  flex: 1;
+  min-width: 200px;
+  margin: 10px;
+}
+
+.contact-right {
+  flex: 1;
+  min-width: 250px;
+  margin: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+form input,
+form textarea {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+form textarea {
+  min-height: 100px;
+  resize: vertical;
+  margin-bottom: 10px;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 40px 20px;
+  background: #fff;
+}
+
+.footer nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  text-size-adjust: 100;
+  color: #4f46e5;
+}
